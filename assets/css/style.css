@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'pretendard', sans-serif;
+  color: #234F6E;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* 변수 선언 */
+:root {
+    --primary-color:#234F6E;
+    --footer-color:#153145;
+    --grey-color: #68696B;
+    --grey-section:#fafafa;
+    --grey-box:#ececec;
+    --white-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    width: 186px;
+    height: 67px;
+    display: block;
+}
+
+.menu-list {
+    display: flex;
+    background-color: #fff;
+
+}
+
+.menu {
+    width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.menu > a {
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 12px 0;
+   
+}
+
+.menu:hover > a {
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-menu-list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    color: var(--primary-color);
+    display: none;
+    z-index: 10;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px 0;
+}
+
+.sub-menu:hover > a {
+    background-color: beige
+}
+
+.header nav {
+    margin-right: 20px;
+}
+
+
+/* kv-sec */
+
+.slide1 {
+    width: 100%;
+    height: 817px;
+    background-image: url(/assets/images/kv01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.slide2 {
+    width: 100%;
+    height: 817px;
+    background-image: url(/assets/images/kv02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.slide3 {
+    width: 100%;
+    height: 817px;
+    background-image: url(/assets/images/kv03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.kv-h2 {
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: 192px;
+    margin-top: 187px;
+}
+
+.kv-desc {
+    font-size: 32px;
+    margin-left: 192px;
+}
+
+.swiper-button-prev {
+    color: #234F6E;
+}
+
+.swiper-button-next {
+    color: #234F6E;
+}
+
+
+/* business sec */
+
+.business-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 1923px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.sec-txt {
+    padding-top: 184px;
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.list-box {
+    width: 1147px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.box {
+    width: 428px;
+    height: 550px;
+    border: 1px solid black;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: left;
+    border-radius: 50px;
+}
+
+.box-head {
+    font-size: 26px;
+    margin: 47px 20px 15px 30px;
+}
+
+.box-desc {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.box-img {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.box01 {
+    position: absolute;
+    top: 181px;
+    left: 86px;
+}
+.box02 {
+    position: absolute;
+    top: 430px;
+    left: 699px;
+}
+.box03 {
+    position: absolute;
+    top: 980px;
+    left: 86px;
+}
+.box04 {
+    position: absolute;
+    top: 1255px;
+    left: 699px;
+}
+
+.capability-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 1139px;
+    margin: 0 auto;
+    display: flex;
+}
