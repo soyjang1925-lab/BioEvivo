@@ -140,12 +140,22 @@ button {
     margin-left: 192px;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
     color: #234F6E;
 }
 
 .swiper-button-next {
     color: #234F6E;
+} */
+
+/* Hero 프로그레스 바 (상단 고정 스타일) */
+.hero-swiper .swiper-pagination-progressbar {
+  background: rgba(255, 255, 255, 0.2); /* 배경 줄 */
+  height: 4px;
+}
+
+.hero-swiper .swiper-pagination-progressbar-fill {
+  background: #ffffff !important; /* 채워지는 줄 색상 */
 }
 
 
@@ -232,7 +242,190 @@ button {
 .capability-container {
     width: 100%;
     max-width: 1536px;
-    height: 1139px;
+    height: 992px;
     margin: 0 auto;
     display: flex;
+}
+
+.map-container{
+    padding-top: 184px;
+    text-align: center;
+    
+}
+
+.txt-log {
+    height: 22px;
+    padding-top: 8px;
+}
+.info-counter-container {
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+}
+.info-counter-wrap {
+    text-align: center;
+}
+.info-desc {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: var(--grey-color);
+}
+.counter {
+    font-size: 65px;
+    letter-spacing: 4.192px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.counter-add {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+.cta-banner {
+  /* 배너 크기 설정 */
+  width: 100%;
+  height: 300px;
+  margin-top: 63px;
+  
+  /* 배경 설정 (이미지나 색상) */
+  background-image: url(/assets/images/cta.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /* 중앙 정렬의 핵심: Flexbox */
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+  
+  color: white;
+  text-align: center;      /* 텍스트 자체 정렬 */
+}
+
+.text-group {
+  /* 3줄 문구 사이의 간격 조절 */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.cta-title {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.cta-subtitle {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background: white;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px auto 0; /* 버튼도 중앙 정렬 */
+}
+
+.ESG-sec {
+    background-image: url(/assets/images/esg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ESG-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 789px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.career-sec {
+    background-image: url(/assets/images/career.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+
+.career-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 789px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.media-container {
+    width: 100%;
+    max-width: 1536px;
+    height: 850px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.media-swiper {
+  padding-top: 283px;
+}
+
+.card-wrap {
+  height: 500px;
+  
+  /* border: 1px solid #ddd; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+
+.card01 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/card01.png);
+    background-repeat: no-repeat;
+}
+
+.card02 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/card02.png);
+    background-repeat: no-repeat;
+}
+
+.card03 {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/card03.png);
+    background-repeat: no-repeat;
+}
+
+
+/* footer */
+
+.footer-sec {
+    width: 100%;
+    height: 495px;
+    background-color: var(--footer-color);
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1676px;
+}
+
+.footer-line {
+    text-align: center;
+    width: 1676px;
+    border-bottom: 1px solid var(--white-color);
+    padding-left: 122px;
 }
