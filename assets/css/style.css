@@ -43,10 +43,11 @@ button {
 .header {
     width: 100%;
     height: 100px;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    z-index: 5;
 }
 
 .logo a {
@@ -57,8 +58,11 @@ button {
 
 .menu-list {
     display: flex;
-    background-color: #fff;
+}
 
+.arrow-down {
+    width: 15px;
+    height: 15px;
 }
 
 .menu {
@@ -84,7 +88,6 @@ button {
 .sub-menu-list {
     position: absolute;
     width: 100%;
-    background-color: #fff;
     color: var(--primary-color);
     display: none;
     z-index: 10;
@@ -96,7 +99,9 @@ button {
 }
 
 .sub-menu:hover > a {
-    background-color: beige
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .header nav {
@@ -106,12 +111,18 @@ button {
 
 /* kv-sec */
 
+.kv-sec {
+    position: relative;
+    margin-top: -100px;
+}
+
 .slide1 {
     width: 100%;
     height: 817px;
     background-image: url(/assets/images/kv01.jpg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
+     
 }
 .slide2 {
     width: 100%;
@@ -128,30 +139,33 @@ button {
     background-size: cover;    
 }
 
+
 .kv-h2 {
     font-size: 80px;
     font-weight: 600;
-    margin-left: 192px;
-    margin-top: 187px;
+    margin-left: 220px;
+    margin-top: 287px;
 }
 
 .kv-desc {
     font-size: 32px;
-    margin-left: 192px;
+    margin-left: 230px;
 }
 
-/* .swiper-button-prev {
+.swiper-button-prev {
     color: #234F6E;
+    display: none;
 }
 
 .swiper-button-next {
     color: #234F6E;
-} */
+    display: none;
+}
 
 /* Hero 프로그레스 바 (상단 고정 스타일) */
 .hero-swiper .swiper-pagination-progressbar {
   background: rgba(255, 255, 255, 0.2); /* 배경 줄 */
-  height: 4px;
+  height: 0px;
 }
 
 .hero-swiper .swiper-pagination-progressbar-fill {
@@ -173,6 +187,7 @@ button {
 
 .sec-txt {
     padding-top: 184px;
+    height: fit-content;
 }
 
 .sub-title {
@@ -370,16 +385,21 @@ button {
     max-width: 1536px;
     height: 850px;
     margin: 0 auto;
-    display: flex;
+    display: flex
 }
+
+.mediatxt {
+    height: 300px;
+}
+
 
 .media-swiper {
-  padding-top: 283px;
+  padding-top: 330px;
 }
 
+
 .card-wrap {
-  height: 500px;
-  
+  height: 415px; 
   /* border: 1px solid #ddd; */
   display: flex;
   justify-content: center;
@@ -388,26 +408,6 @@ button {
   /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
 }
 
-.card01 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/assets/images/card01.png);
-    background-repeat: no-repeat;
-}
-
-.card02 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/assets/images/card02.png);
-    background-repeat: no-repeat;
-}
-
-.card03 {
-    width: 100%;
-    height: 100%;
-    background-image: url(/assets/images/card03.png);
-    background-repeat: no-repeat;
-}
 
 
 /* footer */
@@ -420,12 +420,72 @@ button {
 
 .footer-container {
     width: 100%;
-    max-width: 1676px;
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-logo {
+    margin-top: 50px;
+}
+
+.footer-contents {
+    width: 10%;
+    color: #e2e2e2;
+    margin-top: 70px;
+    line-height: 3.0;
+}
+
+.link-list > h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link-list a {
+    font-size: 16px;
 }
 
 .footer-line {
-    text-align: center;
-    width: 1676px;
-    border-bottom: 1px solid var(--white-color);
-    padding-left: 122px;
+    width: 100%;
+    max-width: 1536px;
+    margin: 50px auto 0 auto;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1536px;
+    margin: 15px auto 20px auto;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    display: block;
+    padding-right: 15px;
+    border-right: 1px solid #e2e2e2;
+    color: #e2e2e2;
+}
+
+.footer-menu li:last-child a {
+    border-right: 0;
+}
+
+.address {
+    margin-top: 60px;
+    color: #e2e2e2;    
+}
+
+.phone {
+    margin-left: 50px;
+}
+.copyrihgt {
+    color: #e2e2e2;
 }
