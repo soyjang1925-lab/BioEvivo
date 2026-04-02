@@ -6,6 +6,10 @@
     <title>Document</title>
 
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,473 +19,267 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
-    <!-- header sec -->
+    <!-- header -->
 
-    <header class="header">
-        <h1 class="logo">
-            <a href="/">
-                <img src="assets/images/logo(main).png" alt="logo">
+     <header>
+        <nav class="navbar navbar-expand-md bg-white fixed-top">
+            <div class="container-xl">
+            <a class="navbar-brand fw-semibold" href="#" >
+                <img src="assets/images/logo(main).png" alt="">
             </a>
-        </h1>
-        <nav>
-            <ul class="menu-list">
-                <li class="menu">
-                    <a href="/company.html">Company</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">About us</a></li>
-                        <li class="sub-menu"><a href="#">Global network</a></li>
-                        <li class="sub-menu"><a href="#">Capability</a></li>
-                        <li class="sub-menu"><a href="#">Services</a></li>
-                        <li class="sub-menu"><a href="#">History&Award</a></li>
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="/business.html">Business</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Research</a></li>
-                        <li class="sub-menu"><a href="#">CDMO</a></li>
-                        <li class="sub-menu"><a href="#">Testing</a></li>
-                        <li class="sub-menu"><a href="#">Platforms</a></li>
-                      
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="ESG.html">ESG</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Sustainability</a></li>
-                        <li class="sub-menu"><a href="#">ESG</a></li>
-                        <li class="sub-menu"><a href="#">Award</a></li>
-                        <li class="sub-menu"><a href="#">Certifications</a></li>
-                        <li class="sub-menu"><a href="#">ESG Report</a></li>
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="career.html">Career</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Culture</a></li>
-                        <li class="sub-menu"><a href="#">People</a></li>
-                        
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="media.html">Media</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">News room</a></li>
-                    </ul>
-                </li>
-                <li class="menu lang">
-                    <a href="#">KR <span><img class="arrow-down" src="assets/images/chevron-down.png" alt=""></span></a>
-                    </a></li>
-                <li class="menu press">
-                    <a href="#"><span><img class="press" src="assets/images/menu.png" alt=""></span></a>
-                    </a></li>
-                
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="assets/images/logo(main).png" alt="">
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-md-4">
+        <li class="nav-item custom-menu">
+            <a class="nav-link active" href="#">Company</a>
+            <ul class="sub-menu-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Global network</a></li>
+                <li><a href="#">Capability</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">History&Award</a></li>
             </ul>
+        </li>
+        <li class="nav-item custom-menu">
+            <a class="nav-link" href="#">Business</a>
+            <ul class="sub-menu-list">
+                <li><a href="#">Research</a></li>
+                <li><a href="#">CDMO</a></li>
+                <li><a href="#">Testing</a></li>
+                <li><a href="#">Platforms</a></li>
+            </ul>
+        </li>
+        <li class="nav-item custom-menu">
+            <a class="nav-link" href="#">ESG</a>
+            <ul class="sub-menu-list">
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">ESG</a></li>
+                <li><a href="#">Award</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">ESG Report</a></li>
+            </ul>
+        </li>
+        <li class="nav-item custom-menu">
+            <a class="nav-link" href="#">Careers</a>
+            <ul class="sub-menu-list">
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">People</a></li>
+            </ul>
+        </li>
+        <li class="nav-item custom-menu">
+            <a class="nav-link" href="#">Media</a>
+            <ul class="sub-menu-list">
+                <li><a href="#">News room</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center py-0" href="#" id="langSelector" data-bs-toggle="dropdown">
+                KR
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end custom-dropdown-min">
+                <li><a class="dropdown-item d-none" href="#" data-lang="KR">KR</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="EN">EN</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
-            
-            
+
+            </div>
+            </div>
         </nav>
     </header>
 
+
     <!-- KV sec -->
 
-    <section class="kv-sev">
-                
-            <!-- Swiper -->
-            <div class="swiper mySwiper hero-swiper">
-             <div class="swiper-wrapper">
-              <div class="swiper-slide slide1">
-                <div class="kv-txt">
-                    <h2 class="kv-h2">Connecting Science to Life</h2>
-                    <p class="kv-desc">과학을 통해 생명을 연결하고 더 많은 환자에게 치료의 가능성을 전달합니다.</p>
-                </div> 
+    <section class="kv-sec">
+
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="swiper-slide slide2">
-                <div class="kv-txt">
-                    <h2 class="kv-h2">One-stop CDMO</h2>
-                    <p class="kv-desc">바이오의약품의 새로운 기준을 만들어 갑니다.</p>
-                </div> 
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/kv01.jpg" class="d-block w-100" alt="kv">
+                <div class="container-xl kv-text">
+                    <h2 class="kv-title display-2 fw-bold">Connecting Science to Life</h2>
+                    <p class="kv-desc fs-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">과학을 통해 생명을 연결하고 더 많은 환자에게 치료의 가능성을 전달합니다.</p>
+                </div>
             </div>
-            <div class="swiper-slide slide3">
-                <div class="kv-txt">
-                    <h2 class="kv-h2">New Modalities</h2>
-                    <p class="kv-desc">정밀 타깃 항체와 강력한 페이로드 기술을 결합하여 차세대 표적 치료 솔루션을 구현합니다.</p>
-                </div> 
+            <div class="carousel-item">
+                <img src="assets/images/kv02.jpg" class="d-block w-100" alt="kv">
+                <div class="container-xl kv-text">
+                    <h2 class="kv-title display-1 fw-bold" data-aos="fade-up" data-aos-duration="1500">One-stop CDMO</h2>
+                    <p class="kv-desc fs-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">바이오의약품 전 주기에 걸친 통합 CDMO서비스를 제공합니다.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/kv03.jpg" class="d-block w-100" alt="kv">
+                <div class="container-xl kv-text">
+                    <h2 class="kv-title display-1 fw-bold">New Modalities</h2>
+                    <p class="kv-desc fs-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">정밀 타깃 항체와 강력한 페이로드 기술을 결합하여 차세대 표적 치료 솔루션을 구현합니다.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
             </div>
 
-            </div>
-    
-            <div class="swiper-pagination hero-pagination"></div>
-        
-             </div>
-
-           
     </section>
-
+    
 
     <!-- business -->
 
-    <section class="business-sec">
-        <div class="business-container">
-            
-            <div class="sec-txt">
-            <p class="sub-title">OUR BUSINESS</p>
-			<h3 class="title">사업소개</h3>
-            </div>
-            
-            <div class="list-box">
-            <li class="box box01">
-            <a href="#">
+<section class="business-sec">
+    <div class="container-xxl custom-flex-container">
+        <div class="sec-txt">
+            <p class="sec-subtitle">OUR BUSINESS</p>
+            <h3 class="sec-title">사업소개</h3>
+        </div>
+
+        <div class="business-grid-layout">
+            <div class="business-box box-01">
                 <h3 class="box-head">Research</h3>
-                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로</p>
-                <p class="box-desc">혁신적인 치료 가능성을 발굴합니다.</p>
-                <img class="box-img" src="assets/images/bs01.png" alt="">			
-            </a>
-            </li>
-            <li class="box box02">
-            <a href="#">
+                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로<br>혁신적인 치료 가능성을 발굴합니다.</p>
+                <img class="box-img" src="assets/images/bs01.png" alt="">
+            </div>
+            <div class="business-box box-02">
                 <h3 class="box-head">CDMO</h3>
-                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로</p>
-                <p class="box-desc">혁신적인 치료 가능성을 발굴합니다.</p>
-                <img class="box-img" src="assets/images/bs02.png" alt="">			
-            </a>
-            </li>
-            <li class="box box03">
-            <a href="#">
+                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로<br>혁신적인 치료 가능성을 발굴합니다.</p>
+                <img class="box-img" src="assets/images/bs02.png" alt="">
+            </div>
+            <div class="business-box box-03">
                 <h3 class="box-head">Testing</h3>
-                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로</p>
-                <p class="box-desc">혁신적인 치료 가능성을 발굴합니다.</p>
-                <img class="box-img" src="assets/images/bs03.png" alt="">			
-            </a>
-            </li>
-            <li class="box box04">
-            <a href="#">
+                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로<br>혁신적인 치료 가능성을 발굴합니다.</p>
+                <img class="box-img" src="assets/images/bs03.png" alt="">
+            </div>
+            <div class="business-box box-04">
                 <h3 class="box-head">Platforms</h3>
-                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로</p>
-                <p class="box-desc">혁신적인 치료 가능성을 발굴합니다.</p>
-                <img class="box-img" src="assets/images/bs04.png" alt="">			
-            </a>
-            </li>
-        </div>
-        </div>
-    </section>
-
-
-    <!-- Capability -->
-
-    <section class="capability-sec">
-        <div class="capability-container">
-            <div class="sec-txt">
-            <p class="sub-title">OUR CAPABILLITY</p>
-			<h3 class="title">우리의 역량</h3>
+                <p class="box-desc">과학적 근거와 축적된 데이터 기반의 연구로<br>혁신적인 치료 가능성을 발굴합니다.</p>
+                <img class="box-img" src="assets/images/bs04.png" alt="">
             </div>
-
-            <div class="map-container">
-            <p><img class="txt-log" src="assets/images/logo(text).png" alt=""><span>의 글로벌 네트워크는 전 세계 주요 거점에서 최고의 CDMO 기술을 지원합니다</span></p>
-
-            <a href="#">
-                <img src="assets/images/map.png" alt="">
-            </a>
-           
-            </div>
-        </div>
-
-        <div class="container info-counter-container d-flex">
-                <div class="info-counter-wrap">
-                    <p class="info-desc">Global Locations</p>
-                    <h3 class="counter">5</h3>
-                </div>
-                <div class="info-counter-wrap">
-                    <p class="info-desc">Total Capacity</p>
-                    <h3 class="counter">580kL</h3>
-                </div>
-                <div class="info-counter-wrap">
-                    <p class="info-desc">Successful Audits</p>
-                    <h3 class="counter">300 +</h3>
-                </div>
-                <div class="info-counter-wrap">
-                    <p class="info-desc">Global Clientss</p>
-                    <h3 class="counter">180 +</h3>
-                </div>
-            </div>
-    </section>
-
-
-    <!-- CTA banner -->
-
-    
-
-
-    <div class="cta-banner">
-        <div class="text-group">
-          <h2 class="cta-title">Start project with our Expert</h2>
-        <p class="cta-subtitle"><span><img src="assets/images/logo(text-w).png" alt=""></span>와 함께 생명을 변화시키는 과학을 실현해 보세요</p>
-        <a href="#" class="cta-button">Contact Us</a>
         </div>
     </div>
+</section>
 
 
-    </section>
-
-
-    <!-- ESG section -->
-
-    <section class="ESG-sec">
-        <div class="ESG-container">
-             <div class="sec-txt">
-            <p class="sub-title">ESG management</p>
-			<h3 class="title">지속가능성</h3>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Career section -->
-
-    <section class="career-sec">
-        <div class="career-container">
-            <div class="sec-txt">
-            <p class="sub-title">Careers</p>
-			<h3 class="title">직업</h3>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Media section -->
-
-    <section class="media-sec">
-        <div class="media-container">
-
-            <div class="sec-txt mediatxt">
-            <p class="sub-title">MEDIA</p>
-			<h3 class="title">뉴스</h3>
-            </div>
-            
-             <!-- Swiper -->
-            <div class="swiper mySwiper media-swiper">
-             <div class="swiper-wrapper">
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card01.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card02.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card03.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card01.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card02.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-              <div class="swiper-slide card">
-                <div class="card-wrap">
-                        <a href="#">
-                            <img src="assets/images/card03.png" alt="">
-                            <p>문구삽입</p>
-                        </a> 
-                </div> 
-             </div>
-            
-                
-                
-            </div>
-            
-            </div>
-
-            <div class="swiper-pagination board-pagination"></div>
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
-        
-             </div>
+<section class="capability-sec">
+    <div class="container-xxl custom-flex-container">
+        <div class="sec-txt">
+            <p class="sec-subtitle">OUR Capability</p>
+            <h3 class="sec-title">사업역량</h3>
         </div>
 
-    </section>
+        <img src="assets/images/map.png" alt="global">
+    </div>
+</section>
 
 
-    <!-- footer section -->
+<section class="CTA">
+    <div class="CTA-text">
+        <h2>Start project with our Expert</h2>
+        <p>evivo와 함께 생명을 변화시키는 과학을 실현해 보세요.</p>
+    </div>
+    <div class="btn-wrap">
+        <button class="cta-btn">Contact Us</button>
+    </div>
+</section>
 
-    <section class="footer-sec">
-        
-        <div class="footer-container">
-            <a href="/">
-                <h2 class="footer-logo">
-                    <img src="assets/images/logo(footer).png" alt="logo">
-                </h2>
-            </a>
 
-            
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                           <h3>About Us</h3>
-                        <li class="open">
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Business
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                ESG
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                            <h3>Quick Links</h3>
-                        <li>
-                            <a href="#">
-                                Media
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Careers
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                            <h3>Get in touch</h3>
-                        <li class>
-                            <a href="#">
-                                Contact us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Regulatory Support
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                
-        </div>
-        <div class="footer-line"></div>
-        
-        <div class="footer-bottom">
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="#">개인정보처리방침</a>
-                        </li>
-                        <li>
-                            <a href="#">법적고지</a>
-                        </li>
-                        <li>
-                            <a href="#">수출입경영방침</a>
-                        </li>
-                        <li>
-                            <a href="#">공시정보관리규정</a>
-                        </li>
-                        <li>
-                            <a href="#">고객센터</a>
-                        </li>
-                        <li>
-                            <a href="#">오시는 길</a>
-                        </li>
-                    </ul>
-                    
-                    <p class="address">인천광역시 연수구 랜드마크로 100 <span class="phone">032-888-0000</span></p>
-                    <p class="copyrihgt">COPYRIGHTⓒ by EVIVO BIO INC. ALL RIGHTS RESERVED.</p>
-
-        </div>
+<section class="ESG-sec">
+    <div class="container-xxl custom-flex-container sec-pd">
+        <div class="sec-txt">
+            <p class="sec-subtitle">ESG Management</p>
+            <h3 class="sec-title">지속가능성</h3>
         </div>
 
-    </section>
+    </div>
+</section>
 
 
-    <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<section class="careers-sec">
+    <div class="container-xxl custom-flex-container sec-pd">
+        <div class="sec-txt">
+            <p class="sec-subtitle">Careers</p>
+            <h3 class="sec-title">직업</h3>
+        </div>
 
-
-    <script>
-// 1. Hero 슬라이더 (자동재생 + 프로그레스 바)
-const heroSwiper = new Swiper('.hero-swiper', {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.hero-pagination',
-    type: 'progressbar', // 점 형태가 아닌 막대 형태로 변경
-  },
-});
-
-// 2. 게시판 슬라이더 (브레이크포인트 + 프로그레스 바)
-const boardSwiper = new Swiper('.media-swiper', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.media-pagination',
-  },
-  breakpoints: {
-    370: { slidesPerView: 1 },
-    950: { slidesPerView: 2 },
-    1400: { slidesPerView: 3, spaceBetween: 30 },
-  },
-});
-
-    </script>
-   
-
-
-
+    </div>
+</section>
 
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+     AOS.init();
+    </script>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', 'pretendard', sans-serif;
+  color: #234F6E;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* 변수 선언 */
+:root {
+    --primary-color:#234F6E;
+    --footer-color:#153145;
+    --grey-color: #68696B;
+    --grey-section:#fafafa;
+    --grey-box:#ececec;
+    --white-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
