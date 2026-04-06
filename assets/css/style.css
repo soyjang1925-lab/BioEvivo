@@ -170,7 +170,7 @@ a { text-decoration: none; color: inherit; }
   margin-top: 180px;
   
   /* 배경 설정 (이미지나 색상) */
-  background-image: url('/assets/images/cta.jpg');
+  background-image: url("../images/cta.jpg");
   background-size: cover;
   background-position: center;
 
@@ -225,14 +225,14 @@ a { text-decoration: none; color: inherit; }
 /* ESG */
 
 .ESG-sec {
-    background-image: url(/assets/images/esg.png);
+    background-image: url("../images/esg.png");
     width: 100%;
     height: 789px;
 }
 
 
 .careers-sec {
-    background-image: url(/assets/images/career.jpg);
+    background-image: url("../images/career.jpg");
     width: 100%;
     height: 744px;
     color: #fff;
