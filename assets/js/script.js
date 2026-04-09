@@ -1,13 +1,36 @@
 $(document).ready(function() {
-    // 마우스 엔터/리브 이벤트 (데스크탑 화면에서만 작동하게 권장)
-    $('.custom-menu').hover(
-        function() {
-            $(this).find('.sub-menu-list').stop(true, true).slideDown(300);
-        },
-        function() {
-            $(this).find('.sub-menu-list').stop(true, true).slideUp(200);
-        }
-    );
+    if (window.innerWidth > 991) {
+
+        $('.menu').on('mouseenter', function() {
+            $('.sub-menu-list').stop().slideDown();
+            $('.menu-bg').stop().slideDown();
+        })
+        $('.menu').on('mouseleave', function() {
+            $('.sub-menu-list').stop().slideUp();
+            $('.menu-bg').stop().slideUp();
+        })
+    }
+    
+
+    // $('.menu-bg').on('mouseenter', function() {
+    //     $('.sub-menu-list').stop().slideDown();
+    //     $('.menu-bg').stop().slideDown();
+    // })
+    // $('.menu-bg').on('mouseleave', function() {
+    //     $('.sub-menu-list').stop().slideUp();
+    //     $('.menu-bg').stop().slideUp();
+    // })
+
+
+
+    
+
+    if (window.innerWidth < 992) {
+        $('.menu').on('click',function(){
+            $(this).find('.sub-menu-list').stop().slideToggle(300); 
+        });
+
+    }
     
     // 언어 전환 로직 (기존 유지)
     $('.dropdown-item').click(function(e) {

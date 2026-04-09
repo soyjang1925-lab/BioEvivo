@@ -28,80 +28,79 @@
     <!-- header -->
 
      <header>
-        <nav class="navbar navbar-expand-md bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <div class="container-xl">
-            <a class="navbar-brand fw-semibold" href="#" >
-                <img src="assets/images/logo(main).png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <a class="navbar-brand fw-semibold" href="#" >
                     <img src="assets/images/logo(main).png" alt="">
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="assets/images/logo(main).png" alt="">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-lg-4 gap-md-2">
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Company</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">About us</a></li>
+                                    <li class="sub-menu"><a href="#">Global network</a></li>
+                                    <li class="sub-menu"><a href="#">Capability</a></li>
+                                    <li class="sub-menu"><a href="#">Services</a></li>
+                                    <li class="sub-menu"><a href="#">History&Award</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Business</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">Research</a></li>
+                                    <li class="sub-menu"><a href="#">CDMO</a></li>
+                                    <li class="sub-menu"><a href="#">Testing</a></li>
+                                    <li class="sub-menu"><a href="#">Platforms</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">ESG</a>
+                                <ul class="sub-menu-list">
+                                    <!-- <li class="sub-menu"><a href="#">Sustainability</a></li> -->
+                                    <li class="sub-menu"><a href="#">ESG</a></li>
+                                    <li class="sub-menu"><a href="#">Award</a></li>
+                                    <li class="sub-menu"><a href="#">Certifications</a></li>
+                                    <li class="sub-menu"><a href="#">ESG Report</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Careers</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">Culture</a></li>
+                                    <li class="sub-menu"><a href="#">People</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Media</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">News room</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center py-0" href="#" id="langSelector" data-bs-toggle="dropdown">
+                                    KR
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end custom-dropdown-min">
+                                    <li><a class="dropdown-item d-none" href="#" data-lang="KR">KR</a></li>
+                                    <li><a class="dropdown-item" href="#" data-lang="EN">EN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-md-4">
-        <li class="nav-item custom-menu">
-            <a class="nav-link active" href="#">Company</a>
-            <ul class="sub-menu-list">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Global network</a></li>
-                <li><a href="#">Capability</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">History&Award</a></li>
-            </ul>
-        </li>
-        <li class="nav-item custom-menu">
-            <a class="nav-link" href="#">Business</a>
-            <ul class="sub-menu-list">
-                <li><a href="#">Research</a></li>
-                <li><a href="#">CDMO</a></li>
-                <li><a href="#">Testing</a></li>
-                <li><a href="#">Platforms</a></li>
-            </ul>
-        </li>
-        <li class="nav-item custom-menu">
-            <a class="nav-link" href="#">ESG</a>
-            <ul class="sub-menu-list">
-                <li><a href="#">Sustainability</a></li>
-                <li><a href="#">ESG</a></li>
-                <li><a href="#">Award</a></li>
-                <li><a href="#">Certifications</a></li>
-                <li><a href="#">ESG Report</a></li>
-            </ul>
-        </li>
-        <li class="nav-item custom-menu">
-            <a class="nav-link" href="#">Careers</a>
-            <ul class="sub-menu-list">
-                <li><a href="#">Culture</a></li>
-                <li><a href="#">People</a></li>
-            </ul>
-        </li>
-        <li class="nav-item custom-menu">
-            <a class="nav-link" href="#">Media</a>
-            <ul class="sub-menu-list">
-                <li><a href="#">News room</a></li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-flex align-items-center py-0" href="#" id="langSelector" data-bs-toggle="dropdown">
-                KR
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end custom-dropdown-min">
-                <li><a class="dropdown-item d-none" href="#" data-lang="KR">KR</a></li>
-                <li><a class="dropdown-item" href="#" data-lang="EN">EN</a></li>
-            </ul>
-        </li>
-    </ul>
-</div>
-
-
             </div>
-            </div>
+  <div class="menu-bg"></div>
         </nav>
     </header>
 
@@ -249,22 +248,67 @@
 
 
 <section class="ESG-sec">
-    <div class="container-xxl custom-flex-container sec-pd">
+    <div class="container-xxl custom-flex-container sec-pd m-column">
         <div class="sec-txt">
             <p class="sec-subtitle">ESG Management</p>
             <h3 class="sec-title">ESG</h3>
         </div>
+
+
+        <div class="ESG-cont">
+            <p class="esg-text"><span><img class="text-logo02" src="assets/images/logo(text).png" alt=""></span>는 과학과 책임의 균형을 바탕으로 지속가능한 바이오 산업 생태계를 구축합니다</p>
+
+            <div class="card-wrap d-flex">
+            <a href="#">
+                <div class="card" style="width: 10rem;">
+            <div class="card-body">
+            <img class="esg-icon" src="assets/images/environment(g).png" alt="esg">
+            <p class="esg-txt d-flex">Environment<span><img class="arrow-right" src="assets/images/chevron-right.png" alt="arrow"></span></p>
+            </div>
+            </div>
+            </a>
+
+            <a href="#">
+                <div class="card" style="width: 10rem;">
+            <div class="card-body">
+            <img class="esg-icon esgicon02" src="assets/images/social(g).png" alt="esg">
+            <p class="esg-txt d-flex">Social<span><img class="arrow-right" src="assets/images/chevron-right.png" alt="arrow"></span></p>
+            </div>
+            </div>
+            </a>
+            
+            <a href="#">
+                <div class="card" style="width: 10rem;">
+            <div class="card-body">
+            <img class="esg-icon" src="assets/images/governance(g).png" alt="esg">
+            <p class="esg-txt d-flex">Governance<span><img class="arrow-right" src="assets/images/chevron-right.png" alt="arrow"></span></p>
+            </div>
+            </div>
+            </a>
+            
+        </div>
+
+        </div>
+        
+
+        
 
     </div>
 </section>
 
 
 <section class="careers-sec">
-    <div class="container-xxl custom-flex-container sec-pd">
+    <div class="container-xxl custom-flex-container sec-pd m-column">
         <div class="sec-txt">
             <p class="sec-subtitle">Careers</p>
             <h3 class="sec-title careers-h3">직업</h3>
         </div>
+
+        <div class="careers-cont">
+            <p class="careers-text"><span><img class="text-logo02" src="assets/images/logo(text-w).png" alt=""></span>의 글로벌 네트워크에서 <br> 과학으로 생명에 기여하는 커리어를 경험하세요</p>
+        <a href="#" class="career-button">Learn More</a>
+        </div>
+        
 
     </div>
 </section>
