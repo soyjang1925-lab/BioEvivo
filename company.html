@@ -3,222 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company</title>
+    <title>Document</title>
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
     <link rel="stylesheet" href="assets/css/font.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/company.css">
-
 </head>
 <body>
     
-        <!-- header sec -->
+    <!-- header -->
 
-    <header class="header">
-        <h1 class="logo">
-            <a href="/">
-                <img src="assets/images/logo(main).png" alt="logo">
-            </a>
-        </h1>
-        <nav>
-            <ul class="menu-list">
-                <li class="menu">
-                    <a href="/company.html">Company</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">About us</a></li>
-                        <li class="sub-menu"><a href="#">Global network</a></li>
-                        <li class="sub-menu"><a href="#">Capability</a></li>
-                        <li class="sub-menu"><a href="#">Services</a></li>
-                        <li class="sub-menu"><a href="#">History&Award</a></li>
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="/business.html">Business</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Research</a></li>
-                        <li class="sub-menu"><a href="#">CDMO</a></li>
-                        <li class="sub-menu"><a href="#">Testing</a></li>
-                        <li class="sub-menu"><a href="#">Platforms</a></li>
-                      
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="ESG.html">ESG</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Sustainability</a></li>
-                        <li class="sub-menu"><a href="#">ESG</a></li>
-                        <li class="sub-menu"><a href="#">Award</a></li>
-                        <li class="sub-menu"><a href="#">Certifications</a></li>
-                        <li class="sub-menu"><a href="#">ESG Report</a></li>
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="career.html">Career</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">Culture</a></li>
-                        <li class="sub-menu"><a href="#">People</a></li>
-                        
-                    </ul>
-                </li>
-                <li class="menu">
-                    <a href="media.html">Media</a>
-                    <ul class="sub-menu-list">
-                        <li class="sub-menu"><a href="#">News room</a></li>
-                    </ul>
-                </li>
-                <li class="menu lang">
-                    <a href="#">KR <span><img class="arrow-down" src="assets/images/chevron-down.png" alt=""></span></a>
-                    </a></li>
-                <li class="menu press">
-                    <a href="#"><span><img class="press" src="assets/images/menu.png" alt=""></span></a>
-                    </a></li>
-                
-            </ul>
-
-            
-            
+     <header>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container-xl">
+                <a class="navbar-brand fw-semibold" href="#" >
+                    <img src="assets/images/logo(main).png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="assets/images/logo(main).png" alt="">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-lg-4 gap-md-2">
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Company</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">About us</a></li>
+                                    <li class="sub-menu"><a href="#">Global network</a></li>
+                                    <li class="sub-menu"><a href="#">Capability</a></li>
+                                    <li class="sub-menu"><a href="#">Services</a></li>
+                                    <li class="sub-menu"><a href="#">History&Award</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Business</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">Research</a></li>
+                                    <li class="sub-menu"><a href="#">CDMO</a></li>
+                                    <li class="sub-menu"><a href="#">Testing</a></li>
+                                    <li class="sub-menu"><a href="#">Platforms</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">ESG</a>
+                                <ul class="sub-menu-list">
+                                    <!-- <li class="sub-menu"><a href="#">Sustainability</a></li> -->
+                                    <li class="sub-menu"><a href="#">ESG</a></li>
+                                    <li class="sub-menu"><a href="#">Award</a></li>
+                                    <li class="sub-menu"><a href="#">Certifications</a></li>
+                                    <li class="sub-menu"><a href="#">ESG Report</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Careers</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">Culture</a></li>
+                                    <li class="sub-menu"><a href="#">People</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item custom-menu menu">
+                                <a class="nav-link" href="#">Media</a>
+                                <ul class="sub-menu-list">
+                                    <li class="sub-menu"><a href="#">News room</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center py-0" href="#" id="langSelector" data-bs-toggle="dropdown">
+                                    KR
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end custom-dropdown-min">
+                                    <li><a class="dropdown-item d-none" href="#" data-lang="KR">KR</a></li>
+                                    <li><a class="dropdown-item" href="#" data-lang="EN">EN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+  <div class="menu-bg"></div>
         </nav>
     </header>
 
 
-    <!-- KV sec -->
-
-    <section class="kv-sev">
-
-        <div class="kv-container">
-            <h2 class="sec-head">Company</h2>
+    <section class="kv-sec">
+        <div class="container-xxl custom-flex-container m-column">
+            <h2 class="page-title">Company</h2>
         </div>
-        
-    </section>
-
-    <!-- Sub menu sec -->
-
-    <section class="page-menu-sec">
-        <div class="page-menu container">
-            <ul class="page-menu-list">
-                <li class="p-menu"><a href="#"></a>About us</li>
-                <li class="p-menu"><a href="#"></a>Global network</li>
-                <li class="p-menu"><a href="#"></a>Capability</li>
-                <li class="p-menu"><a href="#"></a>Services</li>
-                <li class="p-menu"><a href="#"></a>History&Award</li>
-            </ul>
-        </div>
-
     </section>
 
 
-    <!-- footer section -->
-
-    <!-- <section class="footer-sec">
-        
-        <div class="footer-container">
-            <a href="/">
-                <h2 class="footer-logo">
-                    <img src="assets/images/logo(footer).png" alt="logo">
-                </h2>
-            </a>
-
-            
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                           <h3>About Us</h3>
-                        <li class="open">
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Business
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                ESG
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                            <h3>Quick Links</h3>
-                        <li>
-                            <a href="#">
-                                Media
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Careers
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-contents">
-                    <div class="link-wrap">
-                        <ul class="link-list">
-                            <h3>Get in touch</h3>
-                        <li class>
-                            <a href="#">
-                                Contact us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Regulatory Support
-                            </a>
-                        </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                
+    <!-- <section class="sec-nav">
+        <div class="container-xxl custom-flex-container m-column">
+        <ul class="sec-menu-list">
+            <li class="sec-menu"><a href="#">About Us</a></li>
+            <li class="sec-menu"><a href="#">Global network</a></li>
+            <li class="sec-menu"><a href="#">Capability</a></li>
+            <li class="sec-menu"><a href="#">Services</a></li>
+            <li class="sec-menu"><a href="#">History&Award</a></li>
+        </ul>
         </div>
-        <div class="footer-line"></div>
-        
-        <div class="footer-bottom">
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="#">개인정보처리방침</a>
-                        </li>
-                        <li>
-                            <a href="#">법적고지</a>
-                        </li>
-                        <li>
-                            <a href="#">수출입경영방침</a>
-                        </li>
-                        <li>
-                            <a href="#">공시정보관리규정</a>
-                        </li>
-                        <li>
-                            <a href="#">고객센터</a>
-                        </li>
-                        <li>
-                            <a href="#">오시는 길</a>
-                        </li>
-                    </ul>
-                    
-                    <p class="address">인천광역시 연수구 랜드마크로 100 <span class="phone">032-888-0000</span></p>
-                    <p class="copyrihgt">COPYRIGHTⓒ by EVIVO BIO INC. ALL RIGHTS RESERVED.</p>
-
-        </div>
-        </div>
-
     </section> -->
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/script.js"></script>
-</body>
+
+    <section class="aboutus-sec">
+        <div class="container-xxl custom-flex-container m-column sec-pd">
+        <h3 class="about-title">Connecting Science to Life</h3>
+        <p class="subtitle"><span><img class="text-logo02" src="assets/images/logo(text).png" alt=""></span>는 과학적 근거에서 출발하여 생명으로 이어지는 전 과정을 연결합니다.</p>
+
+        <div class="about-cont">
+            <p class="about-desc">우리는 연구 개발 제조 분석 역량을 하나의 플랫폼으로 통합하여<br> 바이오의약품 전주기에 걸쳐 연결된 해법을 제공합니다.<br><br>과학적 근거와 품질 기준이 모든 의사결정의 출발점 입니다.<br><br>글로벌 품질 기준을 뛰어 넘는 시설과 역량으로<br> 빠르고 신속한 프로젝트 결과물을 위해 움직입니다.</p>
+
+            <img class="name-img" src="assets/images/naming.png" alt="evivo">
+        </div>
+        </div>
+    </section>
+
+
+    <section class="global-sec">
+        <div class="container-xxl custom-flex-container sec-pd">
+          
+            <p class="subtitle"><span><img class="text-logo02" src="assets/images/logo(text).png" alt=""></span>의 글로벌 네트워크는 각 분야 최고의 전문가와 연구, 생산 시설을 공유합니다.</p>
+
+            
+           <div class="marquee">
+            <div class="marquee_track d-flex"><div class="marquee_list w-dyn-list d-flex"><div role="list" class="marquee_flex w-dyn-items d-flex"><div role="listitem" class="marquee_item w-dyn-item d-flex"><div class="box_testimonial m-box-01"><div class="testimonial_txt"></div></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m-box-02"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m-box-03"></div></div>
+            <div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m-box-04"></div></div></div></div>
+            
+            <div class="marquee_list w-dyn-list d-flex"><div role="list" class="marquee_flex w-dyn-items d-flex"><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m-box-05"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m-box-06"></div></div>
+            <div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m-box-07"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m-box-08"></div></div></div></div></div><div class="w-embed">
+                
+            <style>
+            .marquee_track {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 15s linear infinite;
+            }
+
+            @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-50%); }
+            }
+
+            .marquee_track:hover {
+                animation-play-state: paused;
+            }
+            </style>
+            </div>
+           </div>
+
+           <br><br>
+
+           <div class="marquee">
+            <div class="marquee_track d-flex"><div class="marquee_list w-dyn-list d-flex"><div role="list" class="marquee_flex w-dyn-items d-flex"><div role="listitem" class="marquee_item w-dyn-item d-flex"><div class="box_testimonial m2-box-01"><div class="testimonial_txt"></div></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m2-box-02"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m2-box-03"></div></div>
+            <div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m2-box-04"></div></div></div></div>
+            
+            <div class="marquee_list w-dyn-list d-flex"><div role="list" class="marquee_flex w-dyn-items d-flex"><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m2-box-05"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial m2-box-06"></div></div>
+            <div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m2-box-07"></div></div><div role="listitem" class="marquee_item w-dyn-item"><div class="box_testimonial  m2-box-08"></div></div></div></div></div><div class="w-embed">
+                
+            <style>
+            .marquee_track {
+            white-space: nowrap;
+            will-change: transform;
+            animation: marquee 15s linear infinite;
+            }
+
+            @keyframes marquee {
+            from { transform: translateX(-50%); }
+            to { transform: translateX(0%); }
+            }
+
+            .marquee_track:hover {
+                animation-play-state: paused;
+            }
+            </style>
+            </div>
+           </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="capa-sec">
+        <div class="container-xxl custom-flex-container sec-pd">
+          
+            <p class="subtitle"><span><img class="text-logo02" src="assets/images/logo(text).png" alt=""></span>는 최첨단 연구·생산 인프라를 기반으로, 글로벌 규제기관 감사 대응 역량과 폭넓은 CDMO 고객 포트폴리오를 보유합니다.</p>
+
+            <div class="capa-cont">
+                <img class="global-img" src="assets/images/global.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="info-sec sec-pd">
+        <div class="container-xl">
+
+            <p class="subtitle"><span><img class="text-logo02" src="assets/images/logo(text).png" alt=""></span>는 최첨단 연구·생산 인프라를 기반으로, 글로벌 규제기관 감사 대응 역량과 폭넓은 CDMO 고객 포트폴리오를 보유합니다.</p>
+            
+            <div class="info-list-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 info-list info-list01 d-flex justify-content-center align-items-center">
+                        <div class="info-text text-center">
+                            <h3 class="info-list-title fs-5 fw-bold">Research</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서,매일매일의<br>삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list02 d-flex justify-content-center align-items-center">
+                        <div class="info-text text-center">
+                            <h3 class="info-list-title fs-5 fw-bold">CDMO</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서,매일매일의<br>삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list03 d-flex justify-content-center align-items-center">
+                        <div class="info-text text-center">
+                            <h3 class="info-list-title fs-5 fw-bold">Testing</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서,매일매일의<br>삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 info-list info-list04 d-flex justify-content-center align-items-center">
+                        <div class="info-text text-center">
+                            <h3 class="info-list-title fs-5 fw-bold">New Modalities</h3>
+                            <p class="info-list-desc">럭셔리와 편안함이 만나는 곳에서,매일매일의<br>삶을 더욱 특별하게 만들어 보세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+     AOS.init();
+    </script>
+    </body>
 </html>

@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { font-family: Montserrat, Pretendard; color: var(--primary-color); }
+ul { margin: 0px; padding: 0px;}
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button {cursor: pointer;}
+:root { --primary-color: #234F6E; --footer-color: #153145; --grey-color: #68696B; --grey-section: #fafafa; --grey-box: #ececec; --white-color: #ffffff; --point-color:#203EB5;}
+.sec-pd { padding: 140px 0px; }
+
+
+.nav-link { display: flex; align-items: center; height: 100%; line-height: 1.2; padding-top: 0px !important; padding-bottom: 0px !important; }
+
+
+.menu-bg {
+    width: 100%;
+    height: 180px;
+    background-color: #f1f1f1d7;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+}
+
+.menu > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.menu:hover > a {
+    font-weight: 700;
+}
+
+.menu {
+    position: relative;
+}
+
+.sub-menu-list {
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 5;
+    top: 90px;
+    left: 0;
+}
+
+.sub-menu > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey-color);
+}
+
+.sub-menu:hover > a {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
+@media(min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar > div {
+    align-items: stretch !important;
+  }
+  .navbar .offcanvas.offcanvas-end {
+    height: 80px !important;
+  }
+  .navbar .offcanvas-body {
+    height: 80px;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 60px;
+  }
+}
+
+@media(max-width: 991px) {
+
+  .navbar-nav { display: flex; align-items: center; }
+  
+  .menu {
+    padding: 10px;
+  }
+  
+  .menu >a {
+    font-size: 20px;
+    position: relative;
+  }
+  
+  .sub-menu-list { 
+    position: static; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(10px); 
+    /* min-width: 160px;  */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;  */
+    /* padding: 15px 0px;  */
+    z-index: 1000; 
+    border-radius: 12px;}
+  /* .sub-menu-list li { padding: 5px 20px; } */
+  .sub-menu-list li a { text-decoration: none; color: rgb(85, 85, 85); font-size: 14px; display: block; transition: 0.2s; }
+  .sub-menu-list li a:hover { color: rgb(0, 0, 0); font-weight: bold; }
+  
+  .nav-link {
+      position: relative;
+  }
+  
+  .nav-link >a {
+    font-size: 28px;
+  }
+}
+
+
+.dropdown-toggle::after { margin-left: 5px; vertical-align: middle; }
+.custom-dropdown-min { min-width: auto !important; }
+
+.kv-sec { 
+    width: 100%; 
+    height: 459px;
+    background-image: url(/assets/images/company01.jpg);
+    display: flex;
+    align-items: center;
+   
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-color);
+    padding: 30px 40px;
+}
+
+.sec-menu-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-menu > a {
+    display: block;
+    padding: 20px 20px;
+    font-weight: 500;
+    width: 200px;
+    text-align: center;
+} 
+
+.sec-menu:hover > a {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary-color);
+} 
+
+.aboutus-sec {
+    width: 100%;
+    height: 680px;    
+}
+
+.about-title {
+    font-size: 60px;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 50px;
+}
+
+.text-logo02 {
+    width: 70px;
+}
+
+.subtitle {
+    padding: 30px 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.about-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-desc {
+    width: 50%;
+    padding: 100px 60px;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+.name-img {
+    width: 50%;
+}
+
+.global-sec {
+    width: 100%;
+    height: 750px;
+}
+
+
+.box_testimonial {
+    width: 400px;
+    height: 200px;
+    
+    object-fit: cover;
+    padding: 10px;
+    
+}
+
+.m-box-01 {
+    background-image: url(/assets/images/ex01.jpg);
+}
+.m-box-02 {
+    background-image: url(/assets/images/ex02.jpg);
+}
+.m-box-03 {
+    background-image: url(/assets/images/ex03.jpg);
+}
+.m-box-04 {
+    background-image: url(/assets/images/ex04.jpg);
+}
+.m-box-05 {
+    background-image: url(/assets/images/ex01.jpg);
+}
+.m-box-06 {
+    background-image: url(/assets/images/ex02.jpg);
+}
+.m-box-07 {
+    background-image: url(/assets/images/ex03.jpg);
+}
+.m-box-08 {
+    background-image: url(/assets/images/ex04.jpg);
+}
+
+.m2-box-01 {
+    background-image: url(/assets/images/inte01.jpg);
+}
+.m2-box-02 {
+    background-image: url(/assets/images/inte02.jpg);
+}
+.m2-box-03 {
+    background-image: url(/assets/images/inte03.jpg);
+}
+.m2-box-04 {
+    background-image: url(/assets/images/inte04.jpg);
+}
+.m2-box-05 {
+    background-image: url(/assets/images/inte01.jpg);
+}
+.m2-box-06 {
+    background-image: url(/assets/images/inte02.jpg);
+}
+.m2-box-07 {
+    background-image: url(/assets/images/inte03.jpg);
+}
+.m2-box-08 {
+    background-image: url(/assets/images/inte04.jpg);
+}
+
+.testimonial_txt {
+    width: 100%;
+}
+
+.marquee, .marquee {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 28px;
+    display: flex;
+    overflow: hidden;
+}
+
+.capa-sec {
+    width: 100%;
+    height: 750px;
+}
+
+.capa-cont {
+    width: 100%;
+    height: 100%;
+}
+
+.global-img {
+    width: 100%;
+
+}
+
+.info-list {
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.info-list01 {
+    background-image: url(../images/service01.jpg);
+}
+.info-list02 {
+    background-image: url(../images/service02.jpg);
+}
+.info-list03 {
+    background-image: url(../images/service03.jpg);
+}
+.info-list04 {
+    background-image: url(../images/service04.jpg);
+}
